@@ -6,6 +6,12 @@
     <title>Black Friday Deal: My Own Beauty Aesthetics</title>
 
     <style>
+      /* Page layout */
+
+      html {
+        font-size: 18px;
+      }
+
       body {
         margin: 0;
         display: grid;
@@ -15,7 +21,6 @@
 
       header {
         background: lightpink;
-        /* padding: 2rem; */
       }
 
       main {
@@ -24,7 +29,6 @@
 
       footer {
         background: wheat;
-        /* padding: 2rem; */
       }
 
       .sr-only {
@@ -40,19 +44,21 @@
         width: 1px !important;
         white-space: nowrap !important; /* 3 */
       }
+
+      /* Header/Carousel */
     </style>
   </head>
   <body>
     <header>
-      <nav>
+      <section>
         <h1 class="sr-only">My Own Beauty Aesthetics</h1>
-        <ul>
+        <ul class="header-info">
           <li class="all-caps">
             <a href="tel:+16787885530">Call: (678) 788-5530</a>
           </li>
-          <li class="all-caps">By appointment only</li>
+          <li class="all-caps"><a href="#">By appointment only</a></li>
         </ul>
-      </nav>
+      </section>
       <section class="hero">
         <div class="hero-left">
           <h2 class="sr-only">My Own Beauty Aesthetics</h2>
