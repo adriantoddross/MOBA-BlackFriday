@@ -14,8 +14,9 @@
 
       body {
         margin: 0;
-        display: grid;
         height: 100vh;
+
+        display: grid;
         grid-template-rows: auto 1fr auto;
       }
 
@@ -46,17 +47,34 @@
       }
 
       /* Header/Carousel */
+
+      /* This looks weird because entire page is offset; add padding to a header/main/footer element to reproduce */
+
+      .header-container {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      .header-item {
+        align-self: center;
+      }
     </style>
   </head>
   <body>
     <header>
       <section>
         <h1 class="sr-only">My Own Beauty Aesthetics</h1>
-        <ul class="header-info">
-          <li class="all-caps">
+        <ul class="header-container">
+          <li class="all-caps header-item">
             <a href="tel:+16787885530">Call: (678) 788-5530</a>
           </li>
-          <li class="all-caps"><a href="#">By appointment only</a></li>
+          <li class="all-caps header-item">
+            <a href="#">By appointment only</a>
+          </li>
         </ul>
       </section>
       <section class="hero">
