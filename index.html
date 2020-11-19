@@ -4,14 +4,409 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Black Friday Deal: My Own Beauty Aesthetics</title>
+
+    <style>
+      /* CSS Reset */
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+
+      /* Page layout */
+
+      body {
+        height: 100vh;
+        font-size: 1.125em;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+      }
+
+      header {
+        background: lightpink;
+      }
+
+      main {
+        background: coral;
+      }
+
+      footer {
+        background: wheat;
+      }
+
+      .sr-only {
+        border: 0 !important;
+        clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+        -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important; /* 2 */
+        height: 1px !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+        white-space: nowrap !important; /* 3 */
+      }
+
+      /* Header/Carousel */
+
+      .header-container {
+        list-style-type: none;
+
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      .header-item {
+        align-self: center;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav>
-        <h1>My Own Beauty Aesthetics</h1>
-      </nav>
+      <section>
+        <h1 class="sr-only">My Own Beauty Aesthetics</h1>
+        <ul class="header-container">
+          <li class="all-caps header-item">
+            <a href="tel:+16787885530">Call: (678) 788-5530</a>
+          </li>
+          <li class="all-caps header-item">
+            <a href="#">By appointment only</a>
+          </li>
+        </ul>
+      </section>
+      <section class="hero">
+        <div class="hero-left">
+          <h2 class="sr-only">My Own Beauty Aesthetics</h2>
+          <!-- <img src="" alt=""> MOBA logo goes here. -->
+          <!-- <img src="" alt=""> BBB logo goes here. -->
+        </div>
+        <div class="hero-right">
+          <h2>
+            <span>Permanent Makeup Black Friday Deal</span>
+          </h2>
+          <p>
+            <span>Up to</span>
+            <span>50% off</span>
+          </p>
+          <a href="#" class="white-button"
+            >Book my <span class="all-caps">free</span> consultation</a
+          >
+        </div>
+      </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section>
+        <h2>
+          <span>Up to</span>
+          <span>50% off</span>
+        </h2>
+        <p>
+          <span>Permanent Makeup</span>
+          <span>Black Friday Deal</span>
+        </p>
+      </section>
+
+      <div class="cards">
+        <section class="card">
+          <h3>Eyeliner</h3>
+          <p>
+            Semi permanent eyeliner, choice of winged, eye shadow effect or
+            simple liner. Top or bottom liner. Helps enhance natural eye shape.
+            Touch up included in price.
+            <span class="pink-and-bold">
+              Color will be advised by professional during consultation.
+            </span>
+          </p>
+          <a href="#" class="pink-button"
+            >Book my <span class="all-caps">free</span> consultation</a
+          >
+        </section>
+
+        <section class="card">
+          <h3>Lip Blush</h3>
+          <p>
+            Customized permanent lip color. Can be full lips, ombre or liner.
+            Lasts 4 years plus with minimal fading. One month touch up included
+            in price.
+            <span class="pink-and-bold">
+              Color will be advised by professional during consultation.
+            </span>
+          </p>
+          <a href="#" class="pink-button"
+            >Book my <span class="all-caps">free</span> consultation</a
+          >
+        </section>
+
+        <section class="card">
+          <h3>Microshaded Eyebrows</h3>
+          <p>
+            Customized to fit your natural facial features. This look is
+            permanent and looks similar to makeup. Lasts 4 years plus with
+            minimal fading. One month touch up included in price.
+            <span class="pink-and-bold">
+              Color will be advised by professional during consultation.
+            </span>
+          </p>
+          <a href="#" class="pink-button"
+            >Book my <span class="all-caps">free</span> consultation</a
+          >
+        </section>
+      </div>
+
+      <section class="reviews">
+        <h2 class="pink-bg">Reviews</h2>
+
+        <section class="review">
+          <h3 class="rating">
+            ***** <span class="sr-only">Five out of five stars.</span>
+            <span class="review-notes">Top Reviewer</span>
+          </h3>
+          <p>
+            <span class="review-name pink-and-bold">Monica</span>
+            <span class="review-date pink">November 8, 2020</span>
+            <span>Amazing</span>
+          </p>
+        </section>
+
+        <section class="review">
+          <h3 class="rating">
+            ***** <span class="sr-only">Five out of five stars.</span>
+            <span class="review-notes">Top Reviewer</span>
+          </h3>
+          <p>
+            <span class="review-name pink-and-bold">Andrea</span>
+            <span class="review-date pink">October 24, 2020</span>
+            <span>Ann is very professional and does amazing work!</span>
+          </p>
+        </section>
+
+        <section class="review">
+          <h3 class="rating">
+            ***** <span class="sr-only">Five out of five stars.</span>
+            <span class="review-notes">Top Reviewer</span>
+          </h3>
+          <p>
+            <span class="review-name pink-and-bold">Barbara</span>
+            <span class="review-date pink">October 6, 2020</span>
+            <span
+              >Very nice office, Ann was wonderful. Ever pleased with my eye
+              liner and will definitely go back for other services. Barbara
+              R.</span
+            >
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <div class="full-width-bg">
+          <h2>COVID-19 Precautions</h2>
+        </div>
+        <ul>
+          <li>
+            <!-- Icon -->
+            <p>
+              <span class="pink-and-bold">No mask</span>
+              <span>no service</span>
+            </p>
+          </li>
+          <li>
+            <!-- Icon -->
+            <p>
+              <span class="pink-and-bold">Stay home</span>
+              <span>if unwell</span>
+            </p>
+          </li>
+          <li>
+            <!-- Icon -->
+            <p>
+              <span class="pink-and-bold">Must sign</span>
+              <span>COVID 19 consent form</span>
+            </p>
+          </li>
+          <li>
+            <!-- Icon -->
+            <p>
+              <span class="pink-and-bold">No extra</span>
+              <span>company</span>
+            </p>
+          </li>
+          <li>
+            <!-- Icon -->
+            <p>
+              <span class="pink-and-bold">Must wash</span>
+              <span>hands upon arrival</span>
+            </p>
+          </li>
+          <li>
+            <!-- Icon -->
+            <p>
+              <span class="pink-and-bold">Temperature</span>
+              <span>check</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="hero">
+        <div class="hero-left">
+          <h2>
+            <span>Finance all your beauty needs!</span>
+          </h2>
+          <p>
+            <span class="all-caps">Click the button below</span>
+          </p>
+          <a href="#" class="white-button">Apply here</a>
+        </div>
+        <div class="hero-right">
+          <!-- <img src="" alt=""> Background image goes here. -->
+          <!-- <img src="" alt=""> Hand image goes here. -->
+        </div>
+      </section>
+
+      <section>
+        <h2>Find us here</h2>
+        <div class="address">
+          <!-- <img src="" alt=""> Map marker goes here. -->
+          <address>
+            3300 Buckeye Rd Suite 210, Atlanta, GA 30341
+            <a href="#" class="white-button">Go to map</a>
+          </address>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-logos">
+        <!-- <img src="" alt=""> MOBA logo goes here. -->
+        <!-- <img src="" alt=""> BBB logo goes here. -->
+      </div>
+      <section class="footer-left">
+        <ul class="social-icons">
+          <li>
+            <a href="#">
+              <i class="fas fa-home" aria-hidden="true"></i>
+              <span class="sr-only"> Pinterest </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-home" aria-hidden="true"></i>
+              <span class="sr-only"> Facebook </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-home" aria-hidden="true"></i>
+              <span class="sr-only"> Instagram </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-home" aria-hidden="true"></i>
+              <span class="sr-only"> Google </span>
+            </a>
+          </li>
+        </ul>
+        <h2>
+          Social Media Handles |
+          <a href="https://www.myownbeauty.net/">@MyOwnBeautyATL</a>
+        </h2>
+        <h2>
+          Email |
+          <a href="mailto:myownbeautyATL@gmail.com">MyOwnBeautyATL@gmail.com</a>
+        </h2>
+        <hr />
+        <address>
+          <a href="tel:+6787885530">(678) 788-5530</a>
+          <p>
+            <span> 3300 Buckeye Rd Ste 210</span>
+            <span> Atlanta, GA 30341 </span>
+          </p>
+        </address>
+      </section>
+    </footer>
   </body>
 </html>
